@@ -1,0 +1,18 @@
+{{#if groups}}
+Group: {{#each groups}}
+<ul>
+    <li>
+        {{id}}<br>
+        {{name}}<br>
+        {{description}}<br>
+        members:{{#each members}} <ul>
+            <li>
+                {{> id_name}}
+            </li>
+        </ul>
+        {{/each}}
+        <hr>
+    </li>
+</ul>
+{{/each}}
+{{/if}}
