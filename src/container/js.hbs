@@ -2,7 +2,7 @@
 
   <h2>{{name}}</h2>
   <p>Description: {{description}}<br>
-    History: Founder: {{founder}}, year: {{year}}</p>
+    History:{{#with history}} Founder: {{founder}}, year: {{year}}{{/with}}</p>
   <h3>Types</h3>
   {{#each types}}
   <div>
@@ -17,7 +17,7 @@
   <hr>
   <h3>Syntax</h3>
   {{#with syntax}}
-  Veriables: {{veriables}}<br>
+  Veriables: {{variables}}<br>
   Functions: {{functions}}<br>
   Conditionals: {{conditionals}}<br>
   Loops: {{loops}}<br>
