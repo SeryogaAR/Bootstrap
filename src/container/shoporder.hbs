@@ -1,0 +1,30 @@
+<main>
+  <div class="card mb-5">
+    {{#with navigation}}
+    <div class="nav">
+      {{#each links}}
+      <div class="nav-item">
+        <a href="{{href}}" class="nav-link">{{text}}</a>
+      </div>
+      {{/each}}
+    </div>
+    {{/with}}
+  </div>
+
+  <h1>{{header}}</h1>
+
+  <div class="row mt-5">
+    <div class="col-8">
+      <div class="row">
+        {{#with contacts_data}}
+        <h2>{{title}}</h2>
+        {{#each buttons}}
+        {{#if isPrimary}}<a class="btn btn-warning">{{text}}</a>{{/if}}
+        {{#if isOutline}}<a class="btn btn-outline-warning">{{text}}</a>{{/if}}
+
+        {{/each}}
+        {{/with}}
+      </div>
+    </div>
+  </div>
+</main>
