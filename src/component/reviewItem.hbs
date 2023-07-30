@@ -12,17 +12,22 @@
 
         <div class="card-body">
             {{#with reviewBody}}
+
             {{#with seller}}
             <p>{{title}}: {{value}}</p>
             {{/with}}
+
             {{#with rating}}
             <p>{{title}}: {{value}}</p>
             {{/with}}
+
             <p>{{text}}</p>
+
             {{#with advantages}}
             <p>{{title}}:</p>
             <p>{{text}}</p>
             {{/with}}
+
             {{#with disadvantages}}
             <p>{{title}}:</p>
             <p>{{text}}</p>
@@ -39,6 +44,7 @@
         <div class="col-1"></div>
         <div class="col-11">
             {{#with reviewBody}}
+
             {{#each coments}}
             <div class="card m-3 p-1">
 
@@ -48,6 +54,7 @@
 
             </div>
             {{/each}}
+
             {{/with}}
         </div>
     </div>
