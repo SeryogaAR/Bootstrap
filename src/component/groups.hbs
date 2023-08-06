@@ -1,17 +1,17 @@
 {{#if groups}}
 Group: {{#each groups}}
-<ul>
-    <li>
+<ul class="list-group m-2">
+    <li class="list-group-item">
         {{id}}<br>
         {{name}}<br>
         {{description}}<br>
         members:{{#each members}} <ul>
-            <li>
+            <li class="list-group-item">
                 {{> id_name}}
             </li>
         </ul>
         {{/each}}
-        <hr>
+
     </li>
 </ul>
 {{/each}}

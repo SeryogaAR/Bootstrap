@@ -1,29 +1,31 @@
 <div>
   <h2>{{name}} </h2>
   User: {{#each users}}
-  <ul>
-    <li>
+  <ul class="list-group m-2">
+    <li class="list-group-item">
       {{id}}<br>
       {{name}}<br>
       {{gender}}<br>
       {{age}}<br>
-      <hr>
-      Friends:{{#each friends}} <ul>
-        <li>
+
+      Friends:{{#each friends}}
+      <ul class="list-group m-2">
+        <li class="list-group-item">
           {{> id_name}}
-          <hr>
-          mutual_friends:{{#each mutual_friends}} <ul>
-            <li>
+
+          mutual_friends:{{#each mutual_friends}}
+          <ul class="list-group m-2">
+            <li class="list-group-item">
               {{> id_name}}
             </li>
           </ul>
           {{/each}}
-          <hr>
+
           {{> groups}}
         </li>
       </ul>
       {{/each}}
-      <hr>
+
       {{> groups}}
     </li>
   </ul>

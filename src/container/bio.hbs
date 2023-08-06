@@ -1,9 +1,9 @@
-<div>
+<div class="ms-1">
     <main>
         <section>
             {{> title data='Bio' big=true}}
         </section>
-        <div>
+        <div class="m-3">
             <h3>{{name}}</h3>
             <p>
                 <date><b>Birthday:</b> {{birthdate}}</date>{{birthplace}}<br>
@@ -13,25 +13,24 @@
             </p>
         </div>
 
-        <br>
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Known for:</h3>
                 {{#each known_for}}
-                <li>
+                <li class="list-group-item">
                     {{this}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
             <h3>Education:</h3>
             {{#each education}}
             <p>Degree: {{degree}}<br>
@@ -42,43 +41,43 @@
             {{/each}}
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Notable publications:</h3>
                 {{#each notable_publications}}
-                <li>
+                <li class="list-group-item">
                     <b>Title:</b> {{title}} <b>Publisher:</b> {{publisher}} <b>Year:</b> {{year}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Partners:</h3>
                 {{#each partners}}
-                <li>
+                <li class="list-group-item">
                     <b>Name:</b> {{name}} <b>Relationship:</b> {{relationship}} <b>Year:</b> {{years}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
             <h3>Awards:</h3>
             {{#each awards}}
-            <p>
+            <p class="text-center">
                 Title: {{title}}<br>
                 Description: {{description}}<br>
                 <date>Year: {{year}}</date>
@@ -86,67 +85,64 @@
             {{/each}}
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Influences:</h3>
                 {{#each influences}}
-                <li>
+                <li class="list-group-item">
                     {{this}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Influenced:</h3>
                 {{#each influenced}}
-                <li>
+                <li class="list-group-item">
                     {{this}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
 
-            <ul>
+            <ul class="list-group">
                 <h3>Quotes:</h3>
                 {{#each quotes}}
-                <li>
+                <li class="list-group-item">
                     {{this}}
                 </li>
                 {{/each}}
             </ul>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
             <h3>Major discoveries:</h3>
             {{#each major_discoveries}}
-            <p>
-                Title: {{title}}<br>
-                Description: {{description}}<br>
-                <date>Year: {{year}}</date>
+            <p class="text-center">
+                <b>{{title}}</b><br>
+                {{description}}<br>
+                <date>{{year}}</date>
             </p>
             {{/each}}
         </div>
-
-        <br>
-        <hr>
 
     </main>
 

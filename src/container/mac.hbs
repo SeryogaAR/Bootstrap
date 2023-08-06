@@ -1,51 +1,51 @@
-<div>
+<div class="m-2">
   <h2>{{name}} </h2>
   <p>Description: {{description}}<br>
     Price: {{price}}</p>
   Category: {{category}}
   Features:{{#with features}}<br>
   <hr>
-  <div>
-    Processor:{{#with processor}}<br><br>
-    brand:{{brand}}<br>
-    model:{{model}}<br>
-    speed: {{spee}}<br>
-    cores: {{cores}}<br>
-    cache: {{cache}}<br>
+  <div class="m-2">
+    <p>Processor:{{#with processor}}</p>
+    <p>brand:{{brand}}<br>
+      model:{{model}}<br>
+      speed: {{spee}}<br>
+      cores: {{cores}}<br>
+      cache: {{cache}}</p>
     <hr>
     {{/with}}
 
-    memory:{{#with memory}}<br><br>
-    type:{{type}}<br>
-    size: {{size}}<br>
-    speed: {{speed}}<br>
+    <p>memory:{{#with memory}}</p>
+    <p>type:{{type}}<br>
+      size: {{size}}<br>
+      speed: {{speed}}</p>
     <hr>
     {{/with}}
 
-    storage: {{#with storage}}<br><br>
-    type: {{type}}<br>
-    size: {{size}}<br>
+    <p>storage: {{#with storage}}</p>
+    <p>type: {{type}}<br>
+      size: {{size}}</p>
     <hr>
     {{/with}}
 
-    display: {{#with display}}<br><br>
-    Size: {{size}}<br>
-    resolution: {{resolution}}<br>
-    technology: {{technology}}<br>
-    color_space: {{color_space}}<br>
-    brightness: {{brightness}}<br>
-    refresh_rate: {{refresh_rate}}<br>
+    <p>display: {{#with display}}</p>
+    <p>Size: {{size}}<br>
+      resolution: {{resolution}}<br>
+      technology: {{technology}}<br>
+      color_space: {{color_space}}<br>
+      brightness: {{brightness}}<br>
+      refresh_rate: {{refresh_rate}}</p>
     <hr>
     {{/with}}
 
-    graphics: {{#with graphics}}<br><br>
-    brand: {{brand}}<br>
-    model: {{model}}<br>
-    memory: {{memory}}<br>
+    <p>Graphics: {{#with graphics}}</p>
+    <p>brand: {{brand}}<br>
+      model: {{model}}<br>
+      memory: {{memory}}</p>
     <hr>
     {{/with}}
 
-    ports: {{#each ports}}<br><br>
+    <p>ports: {{#each ports}}</p>
     <ul>
       <li>
         type: {{type}}<br>
@@ -64,27 +64,27 @@
     {{/each}}
     <hr>
 
-    battery: {{#with battery}}<br><br>
-    type: {{type}}<br>
-    capacity: {{capacity}}<br>
-    life: {{life}}<br>
+    <p>battery: {{#with battery}}</p>
+    <p>type: {{type}}<br>
+      capacity: {{capacity}}<br>
+      life: {{life}}</p>
     <hr>
     {{/with}}
 
-    weight: {{weight}}<br><br>
+    <p>weight: {{weight}}</p>
     <hr>
 
-    dimensions: {{#with dimensions}}<br><br>
-    height: {{height}}<br>
-    width: {{width}}<br>
-    depth: {{depth}}<br>
+    <p>dimensions: {{#with dimensions}}</p>
+    <p>height: {{height}}<br>
+      width: {{width}}<br>
+      depth: {{depth}}</p>
     <hr>
     {{/with}}
 
-    operating_system: {{operating_system}}<br><br>
+    <p>operating_system: {{operating_system}}</p>
     <hr>
 
-    accessories: {{#each accessories}}<br><br>
+    <p>accessories: {{#each accessories}}</p>
     <ul>
       <li>
         {{name}}<br>
