@@ -1,10 +1,10 @@
-<div>
+<div class="m-2">
     {{#with person}}
     <main>
         <section>
             {{> title data='Person' big=true}}
         </section>
-        <div>
+        <div class="m-2">
             <h3>{{name}}</h3>
             <p> Age: {{age}}<br>
                 Gender: {{gender}}
@@ -14,11 +14,11 @@
             </p>
         </div>
 
-        <br>
+
         <hr>
 
         {{#each education}}
-        <div>
+        <div class="m-2">
             <h4>Education</h4>
             <em>degree: {{degree}}<br>
                 major: {{major}}<br>
@@ -28,11 +28,11 @@
         </div>
         {{/each}}
 
-        <br>
+
         <hr>
 
         {{#each workExperience}}
-        <div>
+        <div class="m-2">
             <h4>Work Experiance</h4>
             <p>
                 Company: {{company}}<br>
@@ -45,10 +45,10 @@
             </p>
         </div>
 
-        <br>
+
         <hr>
 
-        <div>
+        <div class="m-2">
             {{#each employees}}
             <h4>Employees</h4>
             <p>
@@ -66,7 +66,7 @@
                     {{#each teams}}
                     <h4>Teams:</h4>
                     <p>
-                        {{team_name}}<br>
+                        {{team_name}}
                     </p>
                     <div>
                         {{#with team_leader}}

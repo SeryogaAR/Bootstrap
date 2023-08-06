@@ -3,23 +3,21 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
 --}}
 
-<div>
+<div class="m-2">
     {{#with main}}
     <main>
 
-        <section>
+        <section clas="m-2">
             {{> title data="Work History" big=true}}
             <div>
                 <ul>
                     {{#each works}}
                     <li>
-                        <div>
+                        <div class="m-2">
                             {{position}}
                         </div>
 
-                        <br>
-
-                        <div>
+                        <div clas="m-2">
                             {{duration.from}} -
                             {{#if duration.to}}
                             {{duration.to}}
@@ -28,20 +26,15 @@
                             {{/if}}
                         </div>
 
-                        <br>
 
-                        <div>
+                        <div class="m-2">
                             {{> link text=company.name href=company.url blank=true noLine=true}}
                         </div>
 
-                        <br>
-                        <br>
 
-                        <div>
+                        <div class="m-2">
                             <strohg> Project ({{projectAmount}}) </strohg>
                         </div>
-
-                        <br>
 
                         <ul>
                             {{#each projects}}
@@ -51,31 +44,33 @@
                                     {{else}}
                                     <b>{{name}}</b>
                                     {{/if}}
-                                    <br>
+
                                     <div>
                                         <p>{{about}}</p>
                                     </div>
-                                    <br>
-                                    <em>Project stacks ({{stackAmount}})</em>
-                                    {{#each stacks}}
-                                    <ul>
-                                        <li>{{name}}</li>
-                                    </ul>
-                                    {{/each}}
-                                    <br>
-                                    <em>Project awards</em>
-                                    {{#each awards}}
-                                    <ul>
-                                        <li>{{name}}</li>
-                                    </ul>
-                                    {{/each}}
+                                    <div class="m-2">
+                                        <em>Project stacks ({{stackAmount}})</em>
+                                        {{#each stacks}}
+                                        <ul>
+                                            <li>{{name}}</li>
+                                        </ul>
+                                        {{/each}}
+                                    </div>
+                                    <div class="m-2">
+                                        <em>Project awards</em>
+                                        {{#each awards}}
+                                        <ul>
+                                            <li>{{name}}</li>
+                                        </ul>
+                                        {{/each}}
+                                    </div>
                                 </div>
                             </li>
                             {{/each}}
                         </ul>
 
                     </li>
-                    <br>
+
                     {{/each}}
                 </ul>
             </div>
